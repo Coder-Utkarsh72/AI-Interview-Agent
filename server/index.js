@@ -12,6 +12,7 @@ import dns from "dns";
 
 dns.setServers(["8.8.8.8", "8.8.4.4"]);
 
+const app = express(); 
 app.use(cors({
     origin: "https://ai-interview-agent-frontend-k7tx.onrender.com",
     credentials: true
